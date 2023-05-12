@@ -22,11 +22,19 @@ export const convertArrayOfObjectsToCSV = (data, { header, separator }) => {
         csv += appendElement(value, thisRow.length, i, separator);
       });
     }
+    if (header) {
+      header.forEach((key, i) => {
+        const value = valueOrEmpty(row[key]);
 
-    header.forEach((key, i) => {
+        csv += appendElement(value, header.length, i, separator);
+      });
+      return;
+    }
+
+    thisRow.forEach((key, i) => {
       const value = valueOrEmpty(row[key]);
 
-      csv += appendElement(value, header.length, i, separator);
+      csv += appendElement(value, thisRow.length, i, separator);
     });
   });
 

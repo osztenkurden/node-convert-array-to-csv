@@ -1,5 +1,5 @@
 export const optionsHeaderSeparatorDefault = {
-  header: ['Number', 'First', 'Last', 'Handle'],
+  header: ['number', 'first', 'last', 'handle'],
   separator: ',',
 };
 

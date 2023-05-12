@@ -24,7 +24,7 @@ import {
   expectedResultArrayWithHeaderNoOptions,
   expectedResultArrayNoHeaderNoOptions,
   expectedResultArrayOnlyHeader,
-  expectedResultArrayHeaderSeparatorSemicolon,
+  expectedResultObjectHeaderSeparatorSemicolon,
   expectedResultArrayOnlySeparatorTab,
   expectedResultArrayNullAndUndefined,
   expectedResultArrayBooleans,
@@ -61,7 +61,7 @@ test('convertArrayOfArraysToCSV | array of arrays | with default options and no 
 test('convertArrayOfArraysToCSV | array of arrays | options: header + separator semicolon', () => {
   const result = convertArrayOfArraysToCSV(dataArrayWithoutHeader, optionsHeaderSeparatorSemicolon);
 
-  expect(result).toBe(expectedResultArrayHeaderSeparatorSemicolon);
+  expect(result).toBe(expectedResultObjectHeaderSeparatorSemicolon);
 });
 
 test('convertArrayOfArraysToCSV | array of arrays | options: header + default separator', () => {

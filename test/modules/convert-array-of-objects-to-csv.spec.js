@@ -17,7 +17,7 @@ import {
 
 import {
   expectedResultObjectNoOptions,
-  expectedResultObjectHeaderSeparatorSemicolon,
+  expectedResultObjectHeaderSeparatorSemicolonEmpty,
   expectedResultObjectOnlyHeader,
   expectedResultObjectOnlySeparatorTab,
   expectedResultObjectNullAndUndefined,
@@ -41,7 +41,7 @@ test('convertArrayOfObjectsToCSV | array of objects | with default options and d
 test('convertArrayOfObjectsToCSV | array of objects | options: header + separator semicolon', () => {
   const result = convertArrayOfObjectsToCSV(dataObject, optionsHeaderSeparatorSemicolon);
 
-  expect(result).toBe(expectedResultObjectHeaderSeparatorSemicolon);
+  expect(result).toBe(expectedResultObjectHeaderSeparatorSemicolonEmpty);
 });
 
 test('convertArrayOfObjectsToCSV | array of objects | options: header + default separator', () => {

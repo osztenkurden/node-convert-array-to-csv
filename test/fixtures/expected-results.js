@@ -2,9 +2,9 @@ export const expectedResultArrayNoHeaderNoOptions = '1,Mark,Otto,@mdo\n2,Jacob,T
 
 export const expectedResultObjectNoOptions = 'number,first,last,handle\n1,Mark,Otto,@mdo\n2,Jacob,Thornton,@fat\n3,Larry,the Bird,@twitter\n';
 
-export const expectedResultObjectOnlyHeader = 'Number,First,Last,Handle\n1,Mark,Otto,@mdo\n2,Jacob,Thornton,@fat\n3,Larry,the Bird,@twitter\n';
+export const expectedResultObjectOnlyHeader = 'number,first,last,handle\n1,Mark,Otto,@mdo\n2,Jacob,Thornton,@fat\n3,Larry,the Bird,@twitter\n';
 
-export const expectedResultObjectNullAndUndefined = 'Number,First,Last,Handle\n1,Mark,"",@mdo\n2,Jacob,Thornton,""\n3,Larry,the Bird,@twitter\n';
+export const expectedResultObjectNullAndUndefined = 'number,first,last,handle\n1,Mark,"",@mdo\n2,Jacob,Thornton,""\n3,Larry,the Bird,@twitter\n';
 
 export const expectedResultArrayNullAndUndefined = 'number,first,last,handle\n1,Mark,"",@mdo\n2,Jacob,Thornton,""\n3,Larry,the Bird,@twitter\n';
 
@@ -19,6 +19,8 @@ export const expectedResultArrayZero = '0,first,last,""\n0,Mark,Otto,@mdo\n1,Jac
 export const expectedResultObjectZero = '0,first,last,""\n0,Mark,Otto,@mdo\n1,Jacob,Thornton,@fat\n2,Larry,the Bird,@twitter\n';
 
 export const expectedResultObjectHeaderSeparatorSemicolon = 'Number;First;Last;Handle\n1;Mark;Otto;@mdo\n2;Jacob;Thornton;@fat\n3;Larry;the Bird;@twitter\n';
+
+export const expectedResultObjectHeaderSeparatorSemicolonEmpty = 'Number;First;Last;Handle\n"";"";"";""\n"";"";"";""\n"";"";"";""\n';
 
 export const expectedResultObjectOnlySeparatorTab = 'number\tfirst\tlast\thandle\n1\tMark\tOtto\t@mdo\n2\tJacob\tThornton\t@fat\n3\tLarry\tthe Bird\t@twitter\n';
 
