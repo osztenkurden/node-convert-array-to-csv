@@ -23,10 +23,10 @@ export const convertArrayOfObjectsToCSV = (data, { header, separator }) => {
       });
     }
 
-    thisRow.forEach((key, i) => {
+    header.forEach((key, i) => {
       const value = valueOrEmpty(row[key]);
 
-      csv += appendElement(value, thisRow.length, i, separator);
+      csv += appendElement(value, header.length, i, separator);
     });
   });
 
