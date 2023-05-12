@@ -5,7 +5,8 @@
       "arrow-parens": [
           "error",
           "always"
-      ]
+      ],
+      "linebreak-style": 0
   },
   "env": {
       "jest": true
